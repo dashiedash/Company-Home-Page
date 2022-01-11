@@ -1,0 +1,211 @@
+/* Fonts - start */
+/* Noto Sans Mono */
+@font-face {
+  font-family: "Noto Sans Mono Regular";
+  src: url(../fonts/noto-sans/NotoSansMono-Regular.ttf);
+}
+@font-face {
+  font-family: "Noto Sans Mono Bold";
+  src: url(../fonts/noto-sans/NotoSansMono-Bold.ttf);
+}
+/* Fonts - end */
+
+* {
+  border: 0;
+  font-family: "Noto Sans Mono Regular";
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+html {
+  background-color: #141414;
+}
+
+h1 {
+  color: hsla(0, 0%, 95%, 1);
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: hsla(83, 39%, 53%, 1);
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  color: hsla(0, 0%, 95%, 1);
+  line-height: 1.5rem;
+}
+
+/* Navigation Bar - Start */
+nav {
+  background-color: hsla(83, 39%, 26%, 1);
+  display: flex;
+  justify-content: space-between;
+  max-height: 2.5rem;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+nav img {
+  background-color: hsla(83, 39%, 53%, 1);
+  max-height: 1.75rem;
+  padding: 0.5rem;
+}
+
+nav h4 {
+  align-self: center;
+  color: hsla(0, 0%, 95%, 1);
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+}
+
+nav a {
+  float: left;
+  list-style-type: none;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+}
+nav li {
+  font-size: 1rem;
+}
+#nav-home {
+  background-color: hsla(83, 39%, 53%, 1);
+  color: hsla(0, 0%, 95%, 1);
+}
+#nav-about {
+  background-color: hsla(83, 39%, 48%, 1);
+  color: hsla(0, 0%, 95%, 1);
+}
+#nav-contact {
+  background-color: hsla(83, 39%, 42%, 1);
+  color: hsla(0, 0%, 95%, 1);
+}
+
+#nav-home:hover,
+#nav-about:hover,
+#nav-contact:hover {
+  background-color: hsla(84, 40%, 81%, 1);
+  color: #141414;
+}
+/* Navigation Bar - End */
+
+/* Home - Start */
+section#home {
+  margin-bottom: 1rem;
+}
+div.banner {
+  align-items: center;
+  display: flex;
+  height: 15rem;
+  justify-content: center;
+  position: relative;
+}
+
+div.banner::before {
+  background-image: url("../img/bookBG.jpg");
+  background-size: cover;
+  bottom: 0px;
+  content: "";
+  left: 0px;
+  opacity: 0.75;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+div.banner h1 {
+  position: relative;
+}
+/* Home - End */
+
+/* About - Start */
+section#about {
+  margin: 1rem;
+}
+hr {
+  border: none;
+  border-top: 3px solid hsla(83, 39%, 53%, 1);
+  overflow: hidden;
+  margin: 0.25rem 0;
+}
+div.company-description {
+  display: flex;
+  justify-content: space-between;
+}
+div.company-description img {
+  box-sizing: border-box;
+  height: auto;
+  max-width: 25%;
+  padding: 1rem;
+  flex-shrink: 2;
+  object-fit: cover;
+}
+@media only screen and (max-width: 683px) {
+  div.company-description {
+    flex-wrap: wrap-reverse;
+  }
+  div.company-description img {
+    max-width: 100%;
+  }
+}
+
+div.company-description p {
+  padding: 1rem;
+}
+/* About - End */
+
+/* Contact - Start */
+section#contact {
+  margin: 1rem;
+}
+
+div.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.contact-cards img {
+  width: 1rem;
+  height: 1rem;
+  padding: 0 0.5rem 0;
+}
+
+div.hcard {
+  display: flex;
+  margin: 0.5rem;
+  align-items: center;
+}
+
+/* Contact - End */
+
+/* Footer - Start */
+footer {
+  font-size: 0.75rem;
+  background-color: #212121;
+  padding: 0.25rem;
+}
+/* Footer - End */
